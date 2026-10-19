@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="100%" style="background:#0b0d14; font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e2433"/>
+      <stop offset="100%" stop-color="#141824"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Frame Header -->
+  <rect x="20" y="20" width="1160" height="740" rx="12" fill="#111522" stroke="#23293d" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="20" y="20" width="1160" height="42" rx="12" fill="#161b2a"/>
+  <circle cx="44" cy="41" r="6" fill="#ef4444"/>
+  <circle cx="64" cy="41" r="6" fill="#f59e0b"/>
+  <circle cx="84" cy="41" r="6" fill="#10b981"/>
+  <rect x="200" y="28" width="760" height="26" rx="6" fill="#0d101a" stroke="#252c42"/>
+  <text x="580" y="45" fill="#94a3b8" font-size="12" text-anchor="middle">http://localhost:8765 — Infinity APK QA Compliance Studio</text>
+
+  <!-- Top App Navigation Bar -->
+  <g transform="translate(40, 80)">
+    <rect x="0" y="0" width="100" height="26" rx="6" fill="url(#primaryGrad)"/>
+    <text x="50" y="17" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.5">INFINITY QA</text>
+    <text x="115" y="18" fill="#f8fafc" font-size="16" font-weight="700">APK Compliance &amp; Testing Studio</text>
+    
+    <!-- Right badges & controls -->
+    <rect x="760" y="0" width="170" height="26" rx="13" fill="#064e3b" stroke="#059669"/>
+    <circle cx="774" cy="13" r="4" fill="#34d399"/>
+    <text x="786" y="17" fill="#6ee7b7" font-size="11" font-weight="600">Đã kết nối GDrive (2 cases)</text>
+    
+    <rect x="942" y="0" width="85" height="26" rx="6" fill="#1e2433" stroke="#2b344a"/>
+    <text x="984" y="17" fill="#cbd5e1" font-size="12" text-anchor="middle">Tester 1 ▾</text>
+
+    <rect x="1038" y="0" width="82" height="26" rx="6" fill="#312e81" stroke="#4f46e5"/>
+    <text x="1079" y="17" fill="#e0e7ff" font-size="11" font-weight="600" text-anchor="middle">⚙️ Cài đặt</text>
+  </g>
+
+  <!-- Drag & Drop / Upload Card -->
+  <g transform="translate(40, 125)">
+    <rect x="0" y="0" width="1120" height="65" rx="8" fill="#141926" stroke="#4f46e5" stroke-dasharray="6,4"/>
+    <text x="560" y="32" fill="#e2e8f0" font-size="14" font-weight="600" text-anchor="middle">📦 AICleaner_v1.0.2_release.apk (68.4 MB) — Đã phân tích tĩnh hoàn tất!</text>
+    <text x="560" y="50" fill="#34d399" font-size="12" text-anchor="middle">⚡ Quét xong trong 3.2s: 18 tiêu chí tuân thủ, phát hiện 1 cảnh báo tiền sử từ Study Cases</text>
+  </g>
+
+  <!-- History Warning Banner -->
+  <g transform="translate(40, 202)">
+    <rect x="0" y="0" width="1120" height="42" rx="6" fill="#451a03" stroke="#b45309"/>
+    <text x="20" y="26" fill="#fde68a" font-size="12">⚠️ <strong>CẢNH BÁO TIỀN SỬ:</strong> Đối tác này ở bản v1.0.1 từng bị lỗi lọt lưới: <em>"Tắt Unlimited mode nhưng vẫn hiện Native Onboarding Full"</em>. Vui lòng verify kỹ mục P1_06!</text>
+  </g>
+
+  <!-- Info Grid Cards -->
+  <g transform="translate(40, 256)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="265" height="62" rx="8" fill="url(#cardGrad)" stroke="#232a3d"/>
+    <text x="16" y="22" fill="#94a3b8" font-size="11" font-weight="600">ỨNG DỤNG / TÊN FILE</text>
+    <text x="16" y="46" fill="#f8fafc" font-size="16" font-weight="700">AI Cleaner</text>
+
+    <!-- Card 2 -->
+    <rect x="285" y="0" width="265" height="62" rx="8" fill="url(#cardGrad)" stroke="#232a3d"/>
+    <text x="301" y="22" fill="#94a3b8" font-size="11" font-weight="600">PACKAGE NAME</text>
+    <text x="301" y="46" fill="#38bdf8" font-size="14" font-weight="600">com.brivon.cleaner</text>
+
+    <!-- Card 3 -->
+    <rect x="570" y="0" width="265" height="62" rx="8" fill="url(#cardGrad)" stroke="#232a3d"/>
+    <text x="586" y="22" fill="#94a3b8" font-size="11" font-weight="600">PHIÊN BẢN / DUNG LƯỢNG</text>
+    <text x="586" y="46" fill="#f8fafc" font-size="15" font-weight="700">v1.0.2 (68.4 MB)</text>
+
+    <!-- Card 4 -->
+    <rect x="855" y="0" width="265" height="62" rx="8" fill="url(#cardGrad)" stroke="#232a3d"/>
+    <text x="871" y="22" fill="#94a3b8" font-size="11" font-weight="600">TỶ LỆ TUÂN THỦ TỰ ĐỘNG</text>
+    <text x="871" y="46" fill="#10b981" font-size="16" font-weight="700">88.5% (16/18 Pass)</text>
+  </g>
+
+  <!-- Navigation Tabs & Action Buttons -->
+  <g transform="translate(40, 332)">
+    <!-- Tabs -->
+    <text x="0" y="20" fill="#f8fafc" font-size="14" font-weight="700">Phase 1: 5 Màn Đầu</text>
+    <line x1="0" y1="28" x2="140" y2="28" stroke="#4f46e5" stroke-width="3"/>
+
+    <text x="170" y="20" fill="#94a3b8" font-size="14">Phase 2: Full App</text>
+    <text x="320" y="20" fill="#94a3b8" font-size="14">Phase 3: Update &amp; Diff</text>
+    <text x="495" y="20" fill="#94a3b8" font-size="14">Chi tiết Kỹ thuật</text>
+    <text x="640" y="20" fill="#94a3b8" font-size="14">Kho Study Cases (2)</text>
+
+    <!-- Action Buttons Right -->
+    <rect x="740" y="0" width="180" height="32" rx="6" fill="#059669"/>
+    <text x="830" y="21" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">📋 Copy cho Google Sheet</text>
+
+    <rect x="930" y="0" width="190" height="32" rx="6" fill="#d97706"/>
+    <text x="1025" y="21" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">⚠️ Báo Lỗi / Lưu Study Case</text>
+  </g>
+
+  <!-- Checklist Data Table -->
+  <g transform="translate(40, 375)">
+    <!-- Table Header -->
+    <rect x="0" y="0" width="1120" height="34" rx="6" fill="#151a27"/>
+    <text x="15" y="22" fill="#94a3b8" font-size="11" font-weight="700">MÃ</text>
+    <text x="80" y="22" fill="#94a3b8" font-size="11" font-weight="700">CHỨC NĂNG</text>
+    <text x="210" y="22" fill="#94a3b8" font-size="11" font-weight="700">NỘI DUNG KIỂM TRA</text>
+    <text x="450" y="22" fill="#94a3b8" font-size="11" font-weight="700">KỲ VỌNG CHUẨN (EXPECTED)</text>
+    <text x="800" y="22" fill="#94a3b8" font-size="11" font-weight="700">HIỆN TRẠNG (ACTUAL)</text>
+    <text x="1040" y="22" fill="#94a3b8" font-size="11" font-weight="700" text-anchor="middle">TRẠNG THÁI</text>
+
+    <!-- Row 1 (PASS) -->
+    <rect x="0" y="38" width="1120" height="50" fill="#1a202e" rx="4"/>
+    <text x="15" y="68" fill="#f8fafc" font-size="12" font-weight="700">P1_01</text>
+    <rect x="80" y="54" width="55" height="20" rx="4" fill="#252e42"/>
+    <text x="107" y="68" fill="#94a3b8" font-size="11" text-anchor="middle">splash</text>
+    <text x="210" y="63" fill="#f8fafc" font-size="12" font-weight="600">Splash - Giao diện &amp; Text Ads</text>
+    <text x="210" y="79" fill="#94a3b8" font-size="11">Logo + Process bar + Text Ads</text>
+    <text x="450" y="68" fill="#cbd5e1" font-size="12">Hiển thị text "This action may contains ads" dưới process bar</text>
+    <text x="800" y="68" fill="#6ee7b7" font-size="12">Đã tìm thấy text chuẩn trong layout strings</text>
+    <rect x="1005" y="52" width="70" height="22" rx="4" fill="#064e3b" stroke="#059669"/>
+    <text x="1040" y="67" fill="#6ee7b7" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+
+    <!-- Row 2 (PASS) -->
+    <rect x="0" y="92" width="1120" height="50" fill="#161b27" rx="4"/>
+    <text x="15" y="122" fill="#f8fafc" font-size="12" font-weight="700">P1_02</text>
+    <rect x="80" y="108" width="55" height="20" rx="4" fill="#252e42"/>
+    <text x="107" y="122" fill="#94a3b8" font-size="11" text-anchor="middle">splash</text>
+    <text x="210" y="117" fill="#f8fafc" font-size="12" font-weight="600">Splash - Cấu hình Ads &amp; Flow</text>
+    <text x="210" y="133" fill="#94a3b8" font-size="11">banner_splash + inter_splash</text>
+    <text x="450" y="122" fill="#cbd5e1" font-size="12">Đóng inter_splash sang Language; Back không hiện welcome_back</text>
+    <text x="800" y="122" fill="#6ee7b7" font-size="12">Đã cấu hình đủ ID banner_splash và inter_splash</text>
+    <rect x="1005" y="106" width="70" height="22" rx="4" fill="#064e3b" stroke="#059669"/>
+    <text x="1040" y="121" fill="#6ee7b7" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+
+    <!-- Row 3 (MANUAL CHECK) -->
+    <rect x="0" y="146" width="1120" height="50" fill="#1a202e" rx="4"/>
+    <text x="15" y="176" fill="#f8fafc" font-size="12" font-weight="700">P1_03</text>
+    <rect x="80" y="162" width="65" height="20" rx="4" fill="#252e42"/>
+    <text x="112" y="176" fill="#94a3b8" font-size="11" text-anchor="middle">language</text>
+    <text x="210" y="171" fill="#f8fafc" font-size="12" font-weight="600">Language - Delay nút Done 1500ms</text>
+    <text x="210" y="187" fill="#94a3b8" font-size="11">Chống click nhầm vào quảng cáo</text>
+    <text x="450" y="176" fill="#cbd5e1" font-size="12">Sau khi chọn ngôn ngữ bất kỳ -> delay nút Done 1500ms</text>
+    <text x="800" y="176" fill="#fde68a" font-size="12">Cần tester bấm thử trên máy để cảm nhận delay 1.5s</text>
+    <rect x="990" y="160" width="100" height="22" rx="4" fill="#78350f" stroke="#d97706"/>
+    <text x="1040" y="175" fill="#fde68a" font-size="11" font-weight="700" text-anchor="middle">MANUAL CHECK</text>
+
+    <!-- Row 4 (FAIL) -->
+    <rect x="0" y="200" width="1120" height="50" fill="#161b27" rx="4"/>
+    <text x="15" y="230" fill="#f8fafc" font-size="12" font-weight="700">P1_05</text>
+    <rect x="80" y="216" width="45" height="20" rx="4" fill="#252e42"/>
+    <text x="102" y="230" fill="#94a3b8" font-size="11" text-anchor="middle">onb</text>
+    <text x="210" y="225" fill="#f8fafc" font-size="12" font-weight="600">Onboarding - 4 Trang &amp; Vị trí Ads</text>
+    <text x="210" y="241" fill="#f8fafc" font-size="11">Native trang 1, 4 &amp; Fullscreen</text>
+    <text x="450" y="230" fill="#cbd5e1" font-size="12">Hiển thị đủ 4 trang. Có native_onboarding_fullscreen_1_1</text>
+    <text x="800" y="230" fill="#fca5a5" font-size="12">❌ Thiếu ID native_onboarding_fullscreen_1_1 trong ad_config.json</text>
+    <rect x="1005" y="214" width="70" height="22" rx="4" fill="#7f1d1d" stroke="#dc2626"/>
+    <text x="1040" y="229" fill="#fca5a5" font-size="11" font-weight="700" text-anchor="middle">FAIL</text>
+
+    <!-- Row 5 (PASS) -->
+    <rect x="0" y="254" width="1120" height="50" fill="#1a202e" rx="4"/>
+    <text x="15" y="284" fill="#f8fafc" font-size="12" font-weight="700">P1_08</text>
+    <rect x="80" y="270" width="45" height="20" rx="4" fill="#252e42"/>
+    <text x="102" y="284" fill="#94a3b8" font-size="11" text-anchor="middle">ads</text>
+    <text x="210" y="279" fill="#f8fafc" font-size="12" font-weight="600">Inter Welcome Back (Exclusion)</text>
+    <text x="210" y="295" fill="#94a3b8" font-size="11">ResumeAdsEntryRule</text>
+    <text x="450" y="284" fill="#cbd5e1" font-size="12">Không hiển thị tại Splash, Language, Onboarding, Uninstall</text>
+    <text x="800" y="284" fill="#6ee7b7" font-size="12">Đã phát hiện khai báo ResumeAdsEntryRule chuẩn</text>
+    <rect x="1005" y="268" width="70" height="22" rx="4" fill="#064e3b" stroke="#059669"/>
+    <text x="1040" y="283" fill="#6ee7b7" font-size="11" font-weight="700" text-anchor="middle">PASS</text>
+  </g>
+</svg>
