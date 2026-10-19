@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hướng Dẫn Sử Dụng - KOG APK Tester Studio</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 1000px; margin: 40px auto; padding: 0 20px; color: #1e293b; background: #f8fafc; }
+    h1 { color: #1e1b4b; border-bottom: 2px solid #6366f1; padding-bottom: 10px; }
+    h2 { color: #3730a3; margin-top: 35px; border-bottom: 1px solid #e2e8f0; padding-bottom: 6px; }
+    h3 { color: #4338ca; }
+    code { background: #e0e7ff; color: #3730a3; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+    pre { background: #1e293b; color: #f8fafc; padding: 16px; border-radius: 8px; overflow-x: auto; }
+    .highlight-box { background: #ecfdf5; border-left: 4px solid #10b981; padding: 14px 18px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .warning-box { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 14px 18px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .ai-box { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 14px 18px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .device-box { background: #fdf4ff; border-left: 4px solid #d946ef; padding: 14px 18px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+    .img-card { background: #fff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 16px; margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .img-card img { width: 100%; border-radius: 8px; display: block; }
+  </style>
+</head>
+<body>
+
+  <h1>📖 HƯỚNG DẪN SỬ DỤNG KOG APK TESTER STUDIO</h1>
+  <p><strong>Dành cho</strong>: Team Tester KOG Studio | <strong>Định dạng hỗ trợ</strong>: APK đối tác 50 – 100 MB</p>
+
+  <div class="highlight-box">
+    <strong>🌟 ĐIỂM NỔI BẬT CỦA KOG APK TESTER STUDIO:</strong>
+    <ul>
+      <li>Chạy trực tiếp bằng <strong>1 file KOG_APK_Tester_Studio.exe duy nhất (~12 MB)</strong>, không cần cài đặt Python, Java hay môi trường ngoài!</li>
+      <li>Quét tự động Manifest, ad_config.json, Event Tracking từ Google Sheet trong <strong>3 - 5 giây</strong>.</li>
+      <li><strong>📱 Hỗ Trợ Test Song Song Cả Giả Lập (Emulator) & Thiết Bị Thật</strong>: Nhận diện LDPlayer, BlueStacks, Nox, AVD hoặc điện thoại cắm USB. 1-Click cài đặt, mở app, chụp ảnh màn hình và xem log quảng cáo (Ad Logcat) trực tiếp!</li>
+      <li><strong>🧠 Hệ Thống Tự Học Quy Tắc (Self-Learning Rule Engine)</strong>: Khi tester báo bug lọt lưới kèm APK, hệ thống tự học để các lần quét sau lập tức phát hiện và chặn lỗi tương tự!</li>
+      <li><strong>🤖 KOG AI Assistant (Google Gemini 1.5 Flash)</strong>: Trợ lý AI tích hợp sẵn, hỗ trợ tra cứu quy chuẩn ITG, phân tích kết quả test và soạn email phản hồi đối tác 1-click!</li>
+      <li><strong>🔒 Bảo Mật Thiết Bị (HWID Lock)</strong>: Quản lý cấp phép theo máy tương tự KOG Studio, bảo vệ dữ liệu nội bộ.</li>
+      <li><strong>📜 Nhật Ký Hoạt Động (Activity Logs)</strong>: Tự động ghi lại mọi thao tác của tester, quản lý lịch sử kiểm thử minh bạch.</li>
+      <li><strong>📁 Kho Lưu Trữ Google Drive Dùng Chung</strong>: Truy cập trực tiếp tại <a href="https://drive.google.com/drive/folders/1IrayqTICONSxnd896T9ZeDgEiDH_wEUL?usp=drive_link" target="_blank">Folder Google Drive KOG QA</a>.</li>
+    </ul>
+  </div>
+
+  <h2>📸 GIAO DIỆN CHÍNH CỦA HỆ THỐNG</h2>
+  <div class="img-card">
+    <img src="docs/images/dashboard_preview.svg" alt="Giao diện chính">
+  </div>
+
+  <h2>1. CÁCH MỞ CÔNG CỤ (1-CLICK)</h2>
+  <p>Bạn chỉ cần tải file <code>KOG_APK_Tester_Studio.exe</code> về máy tính và bấm đúp chuột để chạy (hoặc dùng <code>Chay_KOG_APK_Tester_Studio.bat</code>).</p>
+  <ul>
+    <li>Cửa sổ ứng dụng sẽ tự động mở trình duyệt web tại: <code>http://localhost:8765</code>.</li>
+    <li>Kéo thả file APK vào để kiểm tra ngay.</li>
+  </ul>
+
+  <h2>2. 📱 KIỂM THỬ TRÊN EMULATOR & THIẾT BỊ THẬT</h2>
+  <div class="device-box">
+    <strong>TÍNH NĂNG ĐIỀU KHIỂN THIẾT BỊ & GIẢ LẬP:</strong>
+    <ul>
+      <li>Vào Tab <strong>"📱 Emulator & Thiết Bị"</strong> trên màn hình.</li>
+      <li>Hệ thống tự động phát hiện Giả lập (LDPlayer, BlueStacks, Nox) hoặc Điện thoại Android cắm cáp USB qua ADB.</li>
+      <li><strong>📲 Cài Đặt & Mở App</strong>: Bấm 1 nút, APK vừa quét sẽ tự động được cài đặt và mở ngay trên màn hình giả lập / điện thoại.</li>
+      <li><strong>📸 Chụp Màn Hình Làm Bằng Chứng</strong>: Chụp ngay màn hình thiết bị và lưu về máy tính để đính kèm vào báo cáo lỗi.</li>
+      <li><strong>🔍 Xem Log Quảng Cáo (Ad Logcat)</strong>: Hiển thị thời gian thực luồng log bắn ads từ AdMob, AppLovin, IronSource, ITG, Tracking để kiểm tra xem quảng cáo có thực sự load thành công không!</li>
+    </ul>
+  </div>
+
+  <h2>3. QUY TRÌNH 1-CLICK XUẤT VÀO GOOGLE SHEET ĐỐI TÁC</h2>
+  <div class="img-card">
+    <img src="docs/images/google_sheet_workflow.svg" alt="Quy trình Google Sheet">
+  </div>
+  <div class="highlight-box">
+    <strong>📋 THAO TÁC RẤT ĐƠN GIẢN:</strong>
+    <p>1. Bấm nút xanh <code>📋 Copy cho Google Sheet</code> trên màn hình.</p>
+    <p>2. Mở file Google Sheet của đối tác (bảng có các cột: <code>ID, Function, Test Scenario Group, Actual, Expected, Round 1,...</code>).</p>
+    <p>3. Chọn ô đầu dòng (cột A) và bấm <strong>Ctrl + V</strong> -> Toàn bộ kết quả sẽ được dán ngay ngắn vào từng cột!</p>
+  </div>
+
+  <h2>4. 🤖 SỬ DỤNG KOG AI TRỢ LÝ (GOOGLE GEMINI)</h2>
+  <div class="ai-box">
+    <strong>TÍNH NĂNG TRỢ LÝ AI:</strong>
+    <ul>
+      <li>Bấm nút <strong>"🤖 Hỏi KOG AI"</strong> trên thanh tiêu đề hoặc biểu tượng AI nổi ở góc phải màn hình.</li>
+      <li>Bấm <strong>"✉️ AI Soạn Email Phản Hồi"</strong>: AI sẽ tự động đọc kết quả quét của APK hiện tại và viết email tổng hợp các lỗi cần fix gửi đối tác.</li>
+      <li>Có sẵn các câu hỏi nhanh: Quy chuẩn delay 1500ms màn Language, khoảng cách 35s ads, Unlimited Ads mode ON/OFF, RTL Arabic,...</li>
+      <li>Cấu hình API Key: Bấm <code>⚙️ Cài đặt</code> -> Nhập <code>Gemini API Key</code> để kích hoạt trí tuệ nhân tạo đàm thoại chuyên sâu.</li>
+    </ul>
+  </div>
+
+  <h2>5. 🧠 BÁO CÁO BUG LỌT LƯỚI & DẠY HỆ THỐNG TỰ HỌC QUY TẮC</h2>
+  <div class="warning-box">
+    <strong>⚠️ KHI HỆ THỐNG CHO PASS NHƯNG TEST THỦ CÔNG CÓ BUG:</strong>
+    <p>Bấm nút <code>⚠️ Báo Lỗi Lọt Lưới & Dạy Hệ Thống</code>:</p>
+    <ul>
+      <li>Chọn nguồn APK: Sử dụng APK vừa quét hoặc tải lên file APK khác.</li>
+      <li>Chọn loại quy tắc cần học: Tham số placement (ví dụ: enableUaCheck = true), thiếu placement, thiếu event tracking, hoặc pattern code lỗi.</li>
+      <li>Điền mô tả lỗi thực tế và link bằng chứng ảnh/video.</li>
+      <li>Bấm <code>Lưu & Dạy Hệ Thống Học</code>.</li>
+      <li><strong>Hệ quả</strong>: Hệ thống sinh một <strong>Learned Rule</strong> mới và đồng bộ lên Google Drive. Ở các lần quét APK tiếp theo, nếu gặp lỗi tương tự, hệ thống sẽ phát hiện và bật cảnh báo đỏ ngay lập tức!</li>
+    </ul>
+  </div>
+
+  <h2>6. CƠ CHẾ ĐỒNG BỘ QUA GOOGLE DRIVE DÙNG CHUNG</h2>
+  <div class="img-card">
+    <img src="docs/images/study_case_sync.svg" alt="Đồng bộ Google Drive">
+  </div>
+  <ol>
+    <li>Trên góc phải giao diện, bấm nút <code>📁 Kho Study Cases (GDrive)</code> để mở ngay thư mục dùng chung trên web.</li>
+    <li>Vào <code>⚙️ Cài đặt</code> -> Nhập đường dẫn thư mục Google Drive trên máy bạn (nếu đã cài Google Drive for Desktop) để tự động đồng bộ file.</li>
+    <li>Nhập tên tester của bạn vào ô tên Tester trên header.</li>
+  </ol>
+
+</body>
+</html>
