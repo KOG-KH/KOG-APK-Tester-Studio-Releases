@@ -2,6 +2,8 @@
 
 Hệ thống kiểm thử tuân thủ tích hợp Ads & UI/UX chuẩn đối tác dành cho **Team Tester KOG Studio**, tích hợp **Trợ Lý AI Google Gemini**, **Bộ Máy Tự Học Quy Tắc (Self-Learning Rule Engine)**, và **Bộ Điều Khiển Android Emulator & Thiết Bị Thật**.
 
+[![Tải bản mới nhất .EXE](https://img.shields.io/badge/Download-KOG__APK__Tester__Studio.exe-brightgreen?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/KOG-KH/KOG-APK-Tester-Studio-Releases/releases/latest/download/KOG_APK_Tester_Studio.exe)
+
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Web-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-Hybrid%20Static%20%2B%20Self--Learning%20Rules-purple)
 ![AI-Assistant](https://img.shields.io/badge/AI%20Assistant-Google%20Gemini%201.5%20Flash-06b6d4)
@@ -9,6 +11,8 @@ Hệ thống kiểm thử tuân thủ tích hợp Ads & UI/UX chuẩn đối tá
 ![Security](https://img.shields.io/badge/Security-HWID%20Device%20Lock-success)
 ![Google-Sheet](https://img.shields.io/badge/Export-1--Click%20Google%20Sheet-brightgreen)
 ![Sync](https://img.shields.io/badge/Sync-Google%20Drive%20Auto--Merge-teal)
+
+> 📥 **TẢI VỀ NHANH**: Bấm vào đây để **[Tải trực tiếp KOG_APK_Tester_Studio.exe](https://github.com/KOG-KH/KOG-APK-Tester-Studio-Releases/releases/latest/download/KOG_APK_Tester_Studio.exe)** (~12 MB, chạy ngay không cần cài đặt).
 
 ---
 
@@ -34,7 +38,7 @@ Hệ thống kiểm thử tuân thủ tích hợp Ads & UI/UX chuẩn đối tá
    - Ở các lần quét APK sau, nếu gặp phải lỗ hổng tương tự, hệ thống lập tức **BẬT CẢNH BÁO ĐỎ VÀ TỰ ĐỘNG CHẶN NGAY**, giúp hệ thống càng dùng càng thông minh!
 4. **🤖 Tích Hợp KOG AI Assistant (Google Gemini 1.5 Flash)**:
    - Trợ lý AI tích hợp sẵn trên Web UI (Drawer trượt bên phải màn hình).
-   - Nắm vững toàn bộ tài liệu **ITG Ads Integration Guide**, tiêu chuẩn UI/UX ERain-Studio và Checklist 3 Phase.
+   - Nắm vững toàn bộ tài liệu **ITG Ads Integration Guide**, tiêu chuẩn UI/UX ERain-Studio và Checklist Phase 1 & 2.
    - **1-Click AI Soạn Email Phản Hồi**: Tự động phân tích kết quả quét của APK hiện tại và soạn thảo email/tin nhắn chuyên nghiệp liệt kê cụ thể các lỗi cần đối tác sửa.
    - Có sẵn bộ **Tri Thức Offline ITG** giải đáp các câu hỏi thường gặp ngay cả khi mất mạng internet.
 5. **📜 Nhật Ký Hoạt Động (Activity & Audit Logs)**:
@@ -46,7 +50,7 @@ Hệ thống kiểm thử tuân thủ tích hợp Ads & UI/UX chuẩn đối tá
 7. **📁 Kho Lưu Trữ Google Drive Dùng Chung**:
    - Thư mục Google Drive mặc định: [KOG QA Study Cases Drive](https://drive.google.com/drive/folders/1IrayqTICONSxnd896T9ZeDgEiDH_wEUL?usp=drive_link).
    - Nút 1-click **"📁 Kho Study Cases (GDrive)"** trên thanh điều hướng mở ngay thư mục trên web.
-8. **Checklist tương tác 3 Phase & Xuất Google Sheet 1-Click**:
+8. **Checklist tương tác Phase 1 & 2 & Xuất Google Sheet 1-Click**:
    - Nút **"📋 Copy cho Google Sheet"** sao chép dữ liệu dạng TSV chuẩn xác 100% các cột:  
      `ID` | `Function` | `Test Scenario Group` | `Actual` | `Test Condition` | `Steps to Reproduce` | `Expected` | `Round 1` | `Round 2` | `Link Bug`
    - Tester chỉ cần bấm **`Ctrl + V`** vào Google Sheet đối tác là xong!
@@ -68,7 +72,7 @@ Hệ thống kiểm thử tuân thủ tích hợp Ads & UI/UX chuẩn đối tá
 ## 🚀 Hướng dẫn nhanh cho Tester
 
 ### Cách 1: Tải và chạy file `.exe` trực tiếp (Khuyên dùng)
-1. Tải file **`KOG_APK_Tester_Studio.exe`** từ mục **[Releases](https://github.com/KOG-KH/KOG-APK-Tester-Studio-Releases/releases)** của repo.
+1. Tải trực tiếp file: **[KOG_APK_Tester_Studio.exe (Bấm vào đây để tải ngay)](https://github.com/KOG-KH/KOG-APK-Tester-Studio-Releases/releases/latest/download/KOG_APK_Tester_Studio.exe)**.
 2. Bấm đúp chuột vào file `KOG_APK_Tester_Studio.exe` (hoặc chạy `Chay_KOG_APK_Tester_Studio.bat`).
 3. Trình duyệt web sẽ tự động mở tại: **`http://localhost:8765`**.
 4. Kéo thả file APK của đối tác vào và xem kết quả sau 3 giây!
@@ -81,29 +85,10 @@ Hệ thống kiểm thử tuân thủ tích hợp Ads & UI/UX chuẩn đối tá
 
 ---
 
-## 🛠️ Dành cho Developer muốn chạy mã nguồn
-
-```bash
-# Clone repository
-git clone https://github.com/KOG-KH/KOG-APK-Tester.git
-cd KOG-APK-Tester
-
-# Cài đặt thư viện cần thiết
-pip install -r requirements.txt
-
-# Chạy server
-python main.py
-
-# Đóng gói thành 1 file .exe duy nhất
-python build_exe.py
-```
-
----
-
 ## 📚 Tài liệu kỹ thuật tham chiếu
 
 - [ERain-Studio Ad Integration Guide & UI/UX Standards](https://docs.itgproduct.com/s/android-sdk-publisher/doc/erain-studio-ad-integration-guide-uiux-standards-RBa1FbknOR)
 - [Example-AdLogic-Partner Repository](https://github.com/Infinity-Technologies-Global/Example-AdLogic-Partner)
 - [Tracking Events Master Sheet](https://docs.google.com/spreadsheets/d/1bUH11s0Cp8HHTJQTGJn3G4EywEqotl_XlvsUqtKlmQo/edit)
-- [3-Phase Test Suite Checklist](https://docs.google.com/document/d/1ih1aL_cql7TpVTfjwxSoCI7AkbBVP06sZyhcJHUeKIE/edit)
+- [Checklist Kiểm Thử Tuân Thủ ITG](https://docs.google.com/document/d/1ih1aL_cql7TpVTfjwxSoCI7AkbBVP06sZyhcJHUeKIE/edit)
 - [Thư mục Study Cases Google Drive chung](https://drive.google.com/drive/folders/1IrayqTICONSxnd896T9ZeDgEiDH_wEUL?usp=drive_link)
